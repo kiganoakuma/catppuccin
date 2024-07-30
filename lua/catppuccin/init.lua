@@ -4,13 +4,13 @@ if is_vim then require "catppuccin.lib.vim" end
 ---@type Catppuccin
 local M = {
 	default_options = {
-		flavour = "auto",
+		flavour = "mocha",
 		background = {
 			light = "latte",
 			dark = "mocha",
 		},
 		compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
-		transparent_background = false,
+		transparent_background = true,
 		show_end_of_buffer = false,
 		term_colors = false,
 		kitty = vim.env.KITTY_WINDOW_ID and true or false,
